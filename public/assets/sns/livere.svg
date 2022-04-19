@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35">
+    <defs>
+        <linearGradient id="0pb0j1ktpa" x1="16.211%" x2="100%" y1="23.093%" y2="100%">
+            <stop offset="0%" stop-color="#D60036"/>
+            <stop offset="50.582%" stop-color="#D60036"/>
+            <stop offset="100%" stop-color="#FC0000"/>
+        </linearGradient>
+        <path id="cemb6muw2b" d="M0 0L18.889 0 18.889 19.888 0 19.888z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <circle cx="17.5" cy="17.5" r="17.5" fill="url(#0pb0j1ktpa)"/>
+            <g transform="translate(8 7.5)">
+                <mask id="tox8sdgluc" fill="#fff">
+                    <use xlink:href="#cemb6muw2b"/>
+                </mask>
+                <path fill="#FFF" d="M9.444 15.897l-5.213.596s2.048-1.362.579-3.416c-.691-.949-1.101-2.117-1.101-3.38 0-3.169 2.568-5.738 5.735-5.738 3.168 0 5.736 2.57 5.736 5.737 0 3.17-2.167 5.632-5.736 6.201M9.444 0C4.228 0 0 4.229 0 9.446c0 2.081.674 4.004 1.814 5.565h-.002c1.93 2.564-.787 4.877-.787 4.877l8.419-.995c5.332-.544 9.445-4.23 9.445-9.447C18.89 4.229 14.66 0 9.444 0" mask="url(#tox8sdgluc)"/>
+            </g>
+        </g>
+    </g>
+</svg>
