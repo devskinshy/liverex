@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import {Button, ListItemIcon, ListItemText, Menu, MenuItem} from "@mui/material";
+import {Box, Button, ListItemIcon, ListItemText, Menu, MenuItem} from "@mui/material";
 import SocialIcon from "../../common/SocialIcon";
 
-const LiveReLoginItem = ({sns}) => {
+const LiveReLoginItem = ({sns, onClose}) => {
   return (
-    <MenuItem>
+    <MenuItem onClick={onClose}>
       <ListItemIcon>
         <SocialIcon sns={sns} size={20}/>
       </ListItemIcon>
@@ -15,7 +15,7 @@ const LiveReLoginItem = ({sns}) => {
   )
 };
 
-const LiveReLogin = ({list}) => {
+const LiveReLogin = ({list=[]}) => {
   const [anchorEl, setAnchorEl] = useState(null);
   const toggle = Boolean(anchorEl);
 
@@ -27,16 +27,16 @@ const LiveReLogin = ({list}) => {
   }
 
   return (
-    <>
+    <Box>
       <Button color={'inherit'} onClick={handleClick}>Login</Button>
       <Menu open={toggle} anchorEl={anchorEl} onClose={handleClose}>
         {
           list.map((sns) => (
-            <LiveReLoginItem key={sns} sns={sns}/>
+            <LiveReLoginItem key={sns} sns={sns} onClose={handleClose}/>
           ))
         }
       </Menu>
-    </>
+    </Box>
   );
 };
 

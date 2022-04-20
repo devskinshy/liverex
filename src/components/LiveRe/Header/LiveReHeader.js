@@ -1,17 +1,20 @@
 import React from 'react';
-import {Box} from "@mui/material";
-import styled from "@emotion/styled";
+import {Box, styled} from "@mui/material";
+import LiveReLogin from "./LiveReLogin";
+import LiveReCopyright from "./LiveReCopyright";
 
 const RootStyled = styled(Box)({
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'baseline'
+  alignItems: 'center'
 })
 
-const LiveReHeader = ({children}) => {
+const LiveReHeader = ({list}) => {
   return (
     <RootStyled>
-      {children}
+      <LiveReLogin list={list}/>
+      <Box flexGrow={1}/>
+      <LiveReCopyright/>
     </RootStyled>
   );
 };
